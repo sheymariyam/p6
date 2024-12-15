@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="checkout.js"></script>
+    <link rel="icon" href="./icon/favicon2.png" type="image/x-icon">
+</head>
+<header>
+    <nav>
+        <div class="nav-container">
+            <ul class="navbar">
+                <img src="./icon/favicon2.png" alt="Logo">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="consulting and reservation.html">Consultation and Reservation</a></li>
+                <li><a href="index.html">Pharmacy</a></li>
+               
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <h1>Checkout</h1>
+    <section class="cart-section">
+        <h2>Your Order</h2>
+        <table id="checkout-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--orders automatically added-->              
+            </tbody>
+        </table>
+        <p id="checkout-total-price">Total:$0</p>
+    </section>
+    <section class="customer-details">
+        <h2>Enter your Details</h2>
+        <form id="checkout-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="contact">Contact No:</label>
+            <input type="number" id="contact" required>
+            
+            <label for="address">Address:</label>
+            <textarea id="address" required></textarea>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="prescription">upload prescription</label>
+            <input type="file"id="prescription"name="prescription"accept=".jpg, ,jpeg, .png, .pdf">
+ 
+            <label for="payment">Payment Method:</label>
+            <select id="payment" required>
+                <option value="credit">Card Payment</option>
+                <option value="cash">Cash on Delivery</option>
+            </select>
+            
+            <!-- Hidden Card Payment Details -->
+            <div id="card-details" style="display: none;">
+                <label for="card-number">Card Number:</label>
+                <input type="number" id="card-number" placeholder="Enter card number">
+                
+                <label for="ccv-number">CCV Number:</label>
+                <input type="number" id="ccv-number" placeholder="Enter CCV number">
+            </div>
+        
+            <!-- Delivery Date -->
+            <div id="delivery-date-container">
+                <label for="delivery-date">Delivery Date:</label>
+                <input type="text" id="delivery-date" readonly>
+            </div>
+            
+            <button type="submit">Pay</button>
+        </form>
+        <div id="confirmation-section"></div>
+</main>
+    <section>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <img src="./icon/favicon2.png" alt="favicon icon">
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Doctors</a></li>
+                        <li><a href="#">Pharmacy</a></li>
+                        <li><a href="#">Consultation and Reservations</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-col contact-sec">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><h4>Kandy Branch</h4></li>
+                        <li>+947890007543</li>
+                        <li>+943567800</li>
+                        <li>081-456000986</li>
+        
+                        <li><h4>Colombo Branch</h4></li>
+                        <li>+9478067890066</li>
+                        <li>+9456777332</li>
+                        <li>081-3566780076</li>
+        
+                        <li><h4>Nugegoda Branch</h4></li>
+                        <li>+9467880056</li>
+                        <li>+94777890003</li>
+                        <li>081-4560077892</li>
+                    </ul>
+                </div>
+        
+                <div class="footer-col social-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                            <img src="./icon/facebook_2504903.png" alt="face book">
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                            <img src="./icon/twitter_3670151.png" alt="Twitter">
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                            <img src="./icon/instagram_2111463.png" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+     </section>
+</html>

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width,intial-scale=1.0">
+        <title>Pharmacy</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="order.js"></script>
+        <link rel="icon" href="./icon/favicon2.png" type="image/x-icon">
+    </head>
+        <nav>
+            <div class="nav-container">
+                <ul class="navbar">
+                    <img src="./icon/favicon2.png" alt="Logo">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="consulting and reservation.html">Consultation and Reservation</a></li>
+                    <li><a href="index.html">Pharmacy</a></li>
+                   
+                </ul>
+            </div>
+        </nav>
+        <header class="header-section">
+            <img src="./image/pharamcy3.png" alt="Service Image">
+            <div class="header-text">
+                <h1>Pharmacy </h1>
+            </div>
+    </header>
+    <main>
+        <!--medicine grid-->
+        <section class="med-section">
+            <h1>Order you medicines here!</h1>
+            <!--analgesics-->
+            <div>
+                <h2>Analgesics</h2>
+            </div>
+            <div class="med-Grid">
+                <div class="medicine-card">
+                    <img src="./image/paracetamol2.jpeg" alt="paracetamol">
+                    <h3>Paracetamol</h3>
+                    <p>Price: $5</p>
+                    <label for="paracetamol-quantity">>Quantity:</label>
+                    <input id= "paracetamol-quantity"type="number" min="0" onchange="updateCart('paracetamol',5,this.value)">
+                </div>  
+                <div class="medicine-card">
+                    <img src="./image/aspirin.jpg" alt="aspirin">
+                    <h3>Aspirin</h3>
+                    <p>Price: $10</p>
+                    <label for="aspirin-quantity">Quantity:</label>
+                    <input id ="aspirin-quantity"type="number" min="0" onchange="updateCart('aspirin',10,this.value)">
+                </div>
+                <div class="medicine-card">
+                    <img src="./image/ibuprofen.jpg" alt="Ibuprofen">
+                    <h3>Ibuprofen</h3>
+                    <p>Price: $8</p>
+                    <label for="Ibuprofen-quantity">Quantity:</label>
+                    <input id="Ibuprofen-quantity" type="number" min="0" onchange="updateCart('Ibuprofen',8,this.value)">
+                </div>
+                <div class="medicine-card">
+                    <img src="./image/Naproxen2.jpg" alt="Naproxen">
+                    <h3>Naproxen</h3>
+                    <p>Price: $7</p>
+                    <label for="Naproxen-quantity">Quantity:</label>
+                    <input id="Naproxen" type="number" min="0" onchange="updateCart('Naproxen',7,this.value)">
+                </div>
+                <div class="medicine-card">
+                    <img src="./image/Diclofenac2.jpg" alt="Diclofenac">
+                    <h3>Diclofenac</h3>
+                    <p>Price: $12</p>
+                    <label for="Diclofenac-quantity">Quantity:</label>
+                    <input id="Diclofenac-quantity" type="number" min="0" onchange="updateCart('Diclofenac',12,this.value)">
+                </div>
+                <div class="medicine-card">
+                    <img src="./image/Codeine2.jpg" alt="Codeine">
+                    <h3>Codeine</h3>
+                    <p>Price: $7</p>
+                    <label for="Codeine-quantity">Quantity:</label>
+                    <input id="Codeine-quantity" type="number" min="0" onchange="updateCart('Codeine',7,this.value)">
+                </div>
+                <div class="medicine-card">
+                    <img src="./image/Ketorolac2.webp" alt="Ketorolac">
+                    <h3>Ketorolac</h3>
+                    <p>Price: $7</p>
+                    <label for="Ketorolac-quantity">Quantity:</label>
+                    <input id="Ketorolac-quantity" type="number" min="0" onchange="updateCart('Ketorolac',7,this.value)">
+                </div>
+                <div class="medicine-card">
+                    <img src="./image/Celecoxib2.jpg" alt="Celecoxib">
+                    <h3>Celecoxib</h3>
+                    <p>Price: $7</p>
+                    <label for="Celecoxib-quantity">Quantity:</label>
+                    <input id="Celecoxib-quantity" type="number" min="0" onchange="updateCart('Celecoxib',7,this.value)">
+                </div>
+                <div class="medicine-card">
+                    <img src="./image/Gabapentin.jpeg" alt="Gabapentin">
+                    <h3>Gabapentin</h3>
+                    <p>Price: $7</p>
+                    <label for="Gabapentin-quantity">Quantity:</label>
+                    <input id="Gabapentin-quantity"type="number" min="0" onchange="updateCart('Gabapentin',7,this.value)">
+                </div>
+                <div class="medicine-card">
+                    <img src="./image/Fentanyl2.jpg" alt="Fentanyl">
+                    <h3>Fentanyl</h3>
+                    <p>Price: $7</p>
+                    <label for="Fentanyl-quantity">Quantity:</label>
+                    <input id="Fentanyl-quantity" type="number" min="0" onchange="updateCart('Fentanyl',7,this.value)">
+                </div>
+
+            </div>
+            <!--antibiotics-->
+            <div>
+                <h2>Antibiotics</h2>
+            </div>
+            <div class="med-Grid">
+                <div class="medicine-card">
+                    <img src="./image/Amoxicillin.jpg" alt="Amoxicillin">
+                    <h3>Amoxicillin</h3>
+                    <p>Price: $9</p>
+                    <label for="Amoxicillin-quantity">Quantity:</label>
+                    <input id="Amoxicillin-quantity" type="number" min="0" onchange="updateCart('Amoxicillin',9,this.value)">
+                </div> 
+                <div class="medicine-card">
+                    <img src="./image/Azithromycin2.jpg" alt="Azithromycin">
+                    <h3>Azithromycin</h3>
+                    <p>Price: $11</p>
+                    <label for="Azithromycin-quantity">Quantity:</label>
+                    <input id="Azithromycin-quantity" type="number" min="0" onchange="updateCart('Azithromycin',11,this.value)">
+                </div>   
+                <div class="medicine-card">
+                    <img src="./image/Ciprofloxacinjpeg.jpeg" alt="Ciprofloxacin">
+                    <h3>Ciprofloxacin</h3>
+                    <p>Price: $14</p>
+                    <label for="Ciprofloxacin-quantity">Quantity:</label>
+                    <input id="Ciprofloxacin-quantity" type="number" min="0" onchange="updateCart('Ciprofloxacin',14,this.value)">
+                </div>  
+                <div class="medicine-card">
+                    <img src="./image/doxycycline.jpg" alt="Doxycycline">
+                    <h3>Doxycycline</h3>
+                    <p>Price: $8</p>
+                    <label for="Doxycycline-quantity">Quantity:</label>
+                    <input id="Doxycycline-quantity" type="number" min="0" onchange="updateCart('Doxycycline',8,this.value)">
+                </div>   
+                <div class="medicine-card">
+                    <img src="./image/Cephalexin2.avif" alt="Cephalexin">
+                    <h3>Cephalexin</h3>
+                    <p>Price: $9</p>
+                    <label for="Cephalexin-quantity">Quantity:</label>
+                    <input id="Cephalexin-quantity" type="number" min="0" onchange="updateCart('Cephalexin',9,this.value)">
+                </div>   
+                <div class="medicine-card">
+                    <img src="./image/metronidazole.jpg" alt="Metronidazole">
+                    <h3>Metronidazole</h3>
+                    <p>Price: $13</p>
+                    <label for="Metronidazole-quantity">Quantity:</label>
+                    <input id="Metronidazole-quantity" type="number" min="0" onchange="updateCart('Metronidazole',13,this.value)">
+                </div> 
+                <div class="medicine-card">
+                    <img src="./image/Clindamycin.webp" alt="Clindamycin">
+                    <h3>Clindamycin</h3>
+                    <p>Price: $13</p>
+                    <label for="Clindamycin-quantity">Quantity:</label>
+                    <input id="Clindamycin-quantity" type="number" min="0" onchange="updateCart('Clindamycin',13,this.value)">
+                </div> 
+                <div class="medicine-card">
+                    <img src="./image/Levofloxacin.webp" alt="Levofloxacin">
+                    <h3>Levofloxacin</h3>
+                    <p>Price: $13</p>
+                    <label for="Levofloxacin-quantity">Quantity:</label>
+                    <input id="Levofloxacin-quantity" type="number" min="0" onchange="updateCart('Levofloxacin',13,this.value)">
+                </div> 
+                <div class="medicine-card">
+                    <img src="./image/Vancomycin.png" alt="Vancomycin">
+                    <h3>Vancomycin</h3>
+                    <p>Price: $13</p>
+                    <label for="Vancomycin-quantity">Quantity:</label>
+                    <input id="Vancomycin-quantity" type="number" min="0" onchange="updateCart('Vancomycin',13,this.value)">
+                </div> 
+                <div class="medicine-card">
+                    <img src="./image/Tetracycline.avif" alt="Tetracycline">
+                    <h3>Tetracycline</h3>
+                    <p>Price: $13</p>
+                    <label for="Tetracycline-quantity">Quantity:</label>
+                    <input id="Tetracycline-quantity" type="number" min="0" onchange="updateCart('Tetracycline',13,this.value)">
+                </div>                                
+            </div> 
+            <!--Antidepressants-->
+            <div>
+                <h2>Antidepressants</h2>
+            </div>
+            <div class="med-Grid">
+                    <div class="medicine-card">
+                        <img src="./image/Fluoxetine2.webp" alt="Fluoxetine">
+                        <h3>Fluoxetine</h3>
+                        <p>Price: $6</p>
+                        <label for="Fluoxetine-quantity">Quantity:</label>
+                        <input id="Fluoxetine-quantity" type="number" min="0" onchange="updateCart('Fluoxetine',6,this.value)">
+                    </div>
+                    <div class="medicine-card">
+                        <img src="./image/Sertraline.png" alt="Sertraline">
+                        <h3>Sertraline</h3>
+                        <p>Price: $12</p>
+                        <label for="Sertraline-quantity">Quantity:</label>
+                        <input id="Sertraline-quantity" type="number" min="0" onchange="updateCart('Sertraline',12,this.value)">
+                    </div>
+                    <div class="medicine-card">
+                        <img src="./image/Citalopram.webp" alt="Citalopram">
+                        <h3>Citalopram</h3>
+                        <p>Price: $8</p>
+                        <label for="Citalopram-quantity">Quantity:</label>
+                        <input id="Citalopram-quantity" type="number" min="0" onchange="updateCart('Citalopram',8,this.value)">
+                    </div>
+                    <div class="medicine-card">
+                        <img src="./image/Venlafaxine3.webp" alt="Venlafaxine">
+                        <h3>Venlafaxine</h3>
+                        <p>Price: $9</p>
+                        <label for="Venlafaxine-quantity">Quantity:</label>
+                        <input id="Venlafaxine-quantity" type="number" min="0" onchange="updateCart('Venlafaxine',9,this.value)">
+                    </div>
+                    <div class="medicine-card">
+                        <img src="./image/amitriptyline.jpg" alt="Amitriptyline">
+                        <h3>Amitriptyline</h3>
+                        <p>Price: $3</p>
+                        <label for="Amitriptyline-quantity">Quantity:</label>
+                        <input id="Amitriptyline-quantity" type="number" min="0" onchange="updateCart('Amitriptyline',3,this.value)">
+                    </div>
+                    <div class="medicine-card">
+                        <img src="./image/Bupropion.jpg" alt="Bupropion">
+                        <h3>Bupropion</h3>
+                        <p>Price: $19</p>
+                        <label for="Bupropion-quantity">Quantity:</label>
+                        <input id="Bupropion-quantity" type="number" min="0" onchange="updateCart('Bupropion',19,this.value)">
+                    </div>
+                    <div class="medicine-card">
+                        <img src="./image/Duloxetine.jpeg" alt="Duloxetine">
+                        <h3>Duloxetine</h3>
+                        <p>Price: $19</p>
+                        <label for="Duloxetine-quantity">Quantity:</label>
+                        <input id="Duloxetine-quantity" type="number" min="0" onchange="updateCart('Duloxetine',19,this.value)">
+                    </div>
+                    <div class="medicine-card">
+                        <img src="./image/Mirtazapine.jpeg" alt="Mirtazapine">
+                        <h3>Mirtazapine</h3>
+                        <p>Price: $19</p>
+                        <label for="Mirtazapine-quantity">Quantity:</label>
+                        <input id="Mirtazapine-quantity" type="number" min="0" onchange="updateCart('Mirtazapine',19,this.value)">
+                    </div>
+                    <div class="medicine-card">
+                        <img src="./image/Escitalopram.jpeg" alt="Escitalopram">
+                        <h3>Escitalopram</h3>
+                        <p>Price: $19</p>
+                        <label for="Escitalopram-quantity">Quantity:</label>
+                        <input id="Escitalopram-quantity" type="number" min="0" onchange="updateCart('Escitalopram',19,this.value)">
+                    </div>
+                    <div class="medicine-card">
+                        <img src="./image/Nortriptyline.jpeg" alt="Nortriptyline">
+                        <h3>Nortriptyline</h3>
+                        <p>Price: $19</p>
+                        <label for="Nortriptyline-quantity">Quantity:</label>
+                        <input id="Nortriptyline-quantity" type="number" min="0" onchange="updateCart('Nortriptyline',19,this.value)">
+                    </div>
+                    
+
+                </div>
+                <!--Antihistamines-->
+                <div>
+                    <h2>Antihistamines</h2>
+                </div>
+                <div class="med-Grid">
+                        <div class="medicine-card">
+                            <img src="./image/Loratadine.jpg" alt="Loratadine">
+                            <h3>Loratadine</h3>
+                            <p>Price: $10</p>
+                            <label for="Loratadine-quantity">Quantity:</label>
+                            <input id="Loratadine-quantity" type="number" min="0" onchange="updateCart('Loratadine',10,this.value)">
+                        </div>
+                        <div class="medicine-card">
+                            <img src="./image/Cetirizine.png" alt="Cetirizine">
+                            <h3>Cetirizine</h3>
+                            <p>Price: $13</p>
+                            <label for="Cetirizine-quantity">Quantity:</label>
+                            <input id="Cetirizine-quantity" type="number" min="0" onchange="updateCart('Cetirizine',13,this.value)">
+                        </div>
+                        <div class="medicine-card">
+                            <img src="./image/Diphenhydramine.avif" alt="Diphenhydramine">
+                            <h3>Diphenhydramine</h3>
+                            <p>Price: $4</p>
+                            <label for="Diphenhydramine-quantity">Quantity:</label>
+                            <input id="Diphenhydramine-quantity" type="number" min="0" onchange="updateCart('Diphenhydramine',4,this.value)">
+                        </div>
+                        <div class="medicine-card">
+                            <img src="./image/Fexofenadine.webp" alt="Fexofenadine">
+                            <h3>Fexofenadine</h3>
+                            <p>Price: $5</p>
+                            <label for="Fexofenadine-quantity">Quantity:</label>
+                            <input id="Fexofenadine-quantity" type="number" min="0" onchange="updateCart('Fexofenadine',5,this.value)">
+                        </div>
+                        <div class="medicine-card">
+                            <img src="./image/Chlorpheniramine.jpg" alt="Chlorpheniramine">
+                            <h3>Chlorpheniramine</h3>
+                            <p>Price: $6</p>
+                            <label for="Chlorpheniramine-quantity">Quantity:</label>
+                            <input id="Chlorpheniramine-quantity" type="number" min="0" onchange="updateCart('Chlorpheniramine',6,this.value)">
+                        </div>
+                        <div class="medicine-card">
+                            <img src="./image/Hydroxyzine.jpg" alt="Hydroxyzine">
+                            <h3>Hydroxyzine</h3>
+                            <p>Price: $8</p>
+                            <label for="Hydroxyzine-quantity">Quantity:</label>
+                            <input id="Hydroxyzine-quantity" type="number" min="0" onchange="updateCart('Hydroxyzine',8,this.value)">
+                       </div>
+                       <div class="medicine-card">
+                        <img src="./image/Levocetirizine.avif" alt="Levocetirizine">
+                        <h3>Levocetirizine</h3>
+                        <p>Price: $8</p>
+                        <label for="Levocetirizine-quantity">Quantity:</label>
+                        <input id="Levocetirizine-quantity" type="number" min="0" onchange="updateCart('Levocetirizine',8,this.value)">
+                      </div>
+                      <div class="medicine-card">
+                        <img src="./image/Desloratadine.jpg" alt="Desloratadine">
+                        <h3>Desloratadine</h3>
+                        <p>Price: $8</p>
+                        <label for="Desloratadine-quantity">Quantity:</label>
+                        <input id="Desloratadine-quantity" type="number" min="0" onchange="updateCart('Desloratadine',8,this.value)">
+                      </div>
+                      <div class="medicine-card">
+                        <img src="./image/Promethazine.avif" alt="Promethazine">
+                        <h3>Promethazine</h3>
+                        <p>Price: $8</p>
+                        <label for="Promethazine-quantity">Quantity:</label>
+                        <input id="Promethazine-quantity" type="number" min="0" onchange="updateCart('Promethazine',8,this.value)">
+                      </div>
+                      <div class="medicine-card">
+                        <img src="./image/Meclizine.webp" alt="Meclizine">
+                        <h3>Meclizine</h3>
+                        <p>Price: $8</p>
+                        <label for="Meclizine-quantity">Quantity:</label>
+                        <input id="Meclizine-quantity" type="number" min="0" onchange="updateCart('Meclizine',8,this.value)">
+                      </div>
+                      
+
+
+                    </div>
+                      <!--Antihypertensives-->
+                <div>
+                    <h2>Antihypertensives</h2>
+                </div>
+                <div class="med-Grid">
+                        <div class="medicine-card">
+                            <img src="./image/Amlodipine.jpg" alt="Amlodipine">
+                            <h3>Amlodipine</h3>
+                            <p>Price: $9</p>
+                            <label for="Amlodipine-quantity">Quantity:</label>
+                            <input id="Amlodipine-quantity" type="number" min="0" onchange="updateCart('Amlodipine',9,this.value)">
+                        </div>
+                        <div class="medicine-card">
+                            <img src="./image/Lisinopril3.jpg" alt="Lisinopril">
+                            <h3>Lisinopril</h3>
+                            <p>Price: $10</p>
+                            <label for="Lisinopril-quantity">Quantity:</label>
+                            <input id="Lisinopril-quantity" type="number" min="0" onchange="updateCart('Lisinopril',10,this.value)">
+                        </div>
+                        <div class="medicine-card">
+                            <img src="./image/Losartan.png" alt="Losartan">
+                            <h3>Losartan</h3>
+                            <p>Price: $11</p>
+                            <label for="Losartan-quantity">Quantity:</label>
+                            <input id="Losartan-quantity"type="number" min="0" onchange="updateCart('Losartan',11,this.value)">
+                        </div>
+                        <div class="medicine-card">
+                            <img src="./image/Metoprolol.jpg" alt="Metoprolol">
+                            <h3>Metoprolol</h3>
+                            <p>Price: $13</p>
+                            <label for="Metoprolol-quantity">Quantity:</label>
+                            <input id="Metoprolol-quantity" type="number" min="0" onchange="updateCart('Metoprolol',13,this.value)">
+                        </div>
+                        <div class="medicine-card">
+                            <img src="./image/Hydrochlorothiazide2.png"alt="Hydrochlorothiazide">
+                            <h3>Hydrochlorothiazide</h3>
+                            <p>Price: $12</p>
+                            <label for="Hydrochlorothiazide-quantity">Quantity:</label>
+                            <input id="Hydrochlorothiazide-quantity" type="number" min="0" onchange="updateCart('Hydrochlorothiazide',12,this.value)">
+                        </div>
+                        <div class="medicine-card">
+                            <img src="./image/Clonidine2.webp" alt="Clonidine">
+                            <h3>Clonidine</h3>
+                            <p>Price: $5</p>
+                            <label for="Clonidine-quantity">Quantity:</label>
+                            <input id="Clonidine-quantity" type="number" min="0" onchange="updateCart('Clonidine',5,this.value)">
+                        </div class="medicine text">
+                        <div class="medicine-card">
+                            <img src="./image/Valsartan.webp" alt="Valsartan">
+                            <h3>Valsartan</h3>
+                            <p>Price: $5</p>
+                            <label for="Valsartan-quantity">Quantity:</label>
+                            <input id="Valsartan-quantity" type="number" min="0" onchange="updateCart('Valsartan',5,this.value)">
+                        </div>
+                        <div class="medicine-card">
+                            <img src="./image/Carvedilol.png" alt="Carvedilol">
+                            <h3>Carvedilol</h3>
+                            <p>Price: $5</p>
+                            <label for="Carvedilol-quantity">Quantity:</label>
+                            <input id="Carvedilol-quantity" type="number" min="0" onchange="updateCart('Carvedilol',5,this.value)">
+                        </div>
+                        <div class="medicine-card">
+                            <img src="./image/Diltiazem.webp" alt="Diltiazem">
+                            <h3>Diltiazem</h3>
+                            <p>Price: $5</p>
+                            <label for="Diltiazem-quantity">Quantity:</label>
+                            <input tid="Diltiazem-quantity" type="number" min="0" onchange="updateCart('Diltiazem',5,this.value)">
+                        </div>
+                        <div class="medicine-card">
+                            <img src="./image/Spironolactone.webp" alt="Spironolactone">
+                            <h3>Spironolactone</h3>
+                            <p>Price: $5</p>
+                            <label for="Spironolactone-quantity">Quantity:</label>
+                            <input id="Spironolactone-quantity" type="number" min="0" onchange="updateCart('Spironolactone',5,this.value)">
+                        </div>
+                        
+                    </div>
+        </section>
+        <!--Cart section-->
+        <section class="cart-section">
+            <h2>Cart</h2>
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        
+                        
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--the cart will automatically update when the items add-->
+                </tbody>
+            </table>
+            <p id="total-price">Total:$0</p>
+            <button id="save-favorites-btn" onclick="saveFavorites()">Save as Favorite</button>
+            <button id="apply-favorites-btn" onclick="applyFavorites()">Apply Favorite</button>
+            <button id="buy-now-btn" onclick="redirectToCheckout()">Buy Now </button>
+        </section> 
+    </main>
+   
+ 
+    <section>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <img src="./icon/favicon2.png" alt="favicon icon">
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Doctors</a></li>
+                        <li><a href="#">Pharmacy</a></li>
+                        <li><a href="#">Consultation and Reservations</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-col contact-sec">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><h4>Kandy Branch</h4></li>
+                        <li>+947890007543</li>
+                        <li>+943567800</li>
+                        <li>081-456000986</li>
+        
+                        <li><h4>Colombo Branch</h4></li>
+                        <li>+9478067890066</li>
+                        <li>+9456777332</li>
+                        <li>081-3566780076</li>
+        
+                        <li><h4>Nugegoda Branch</h4></li>
+                        <li>+9467880056</li>
+                        <li>+94777890003</li>
+                        <li>081-4560077892</li>
+                    </ul>
+                </div>
+        
+                <div class="footer-col social-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                            <img src="./icon/facebook_2504903.png" alt="face book">
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                            <img src="./icon/twitter_3670151.png" alt="Twitter">
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                            <img src="./icon/instagram_2111463.png" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>       
+     </section>
+</html>
